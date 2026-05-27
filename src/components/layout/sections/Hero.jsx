@@ -1,5 +1,6 @@
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
+import profileImg from '../../../assets/profile.jpeg'
 
 const INTRO = "Hi, I'm Alexandra —"
 const TYPE_SPEED_MS = 60
@@ -34,7 +35,10 @@ export default function Hero() {
   const typed = useTypewriter(INTRO, TYPE_SPEED_MS)
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center px-6"
+    >
       <div className="flex flex-col items-center text-center max-w-2xl">
         <p
           className="text-sm tracking-wider text-primary-400 mb-5"
@@ -52,16 +56,25 @@ export default function Hero() {
         <motion.h1
           {...fadeUp}
           transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.1 }}
-          className="text-5xl md:text-6xl font-medium text-white leading-tight mb-6"
+          className="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight whitespace-nowrap mb-8"
         >
-          Full-stack software
-          <br />
-          developer.
+          Full-stack software developer.
         </motion.h1>
+
+        <motion.div
+          {...fadeUp}
+          transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.3 }}
+          className="mb-8"
+        >
+          <div className="avatar-wrapper">
+            <div className="avatar-ring" aria-hidden="true" />
+            <img src={profileImg} alt="Alexandra" className="avatar-img" />
+          </div>
+        </motion.div>
 
         <motion.p
           {...fadeUp}
-          transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.3 }}
+          transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.5 }}
           className="text-gray-400 leading-relaxed max-w-[480px] mb-8"
         >
           I build web applications end to end — from backend APIs and
@@ -71,7 +84,7 @@ export default function Hero() {
 
         <motion.div
           {...fadeUp}
-          transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.5 }}
+          transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.7 }}
           className="flex items-center gap-3"
         >
           <a

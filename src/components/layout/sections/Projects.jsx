@@ -12,6 +12,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <ScrollReveal key={project.id} delay={index * 0.1}>
             <ProjectCard
+              icon={project.icon}
               title={project.title}
               description={project.description}
               tech={project.tech}

@@ -30,3 +30,46 @@
     text-decoration: none;
   }
 }
+
+.avatar-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 190px;
+}
+
+@keyframes spin-border {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.avatar-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    #6960D2 35%,
+    #7F77DD 50%,
+    #6960D2 65%,
+    transparent 100%
+  );
+  animation: spin-border 6s linear infinite;
+  z-index: 0;
+}
+
+.avatar-img {
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-ring { animation: none; }
+}

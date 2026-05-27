@@ -9,6 +9,15 @@ export const experience = [
     tech: ["Xano", "Nordcraft", "React", "Tailwind CSS", "Stripe", "REST APIs"],
   },
   {
+  id: 3,
+  role: "Frontend & Integrations Developer",
+  company: "EpicDraft",
+  period: "2024",
+  type: "work",
+  description: "Early-stage AI marketing startup that helped users transform ideas into social media copy using token-based AI generation. Architected the full Stripe subscription and webhook logic alongside the token consumption system for the demo version. Built the supporting database structure in Xano, implemented multi-language support, and contributed UI improvements and bug fixes.",
+  tech: ["Nordcraft", "Xano", "Stripe", "REST APIs"],
+},
+  {
     id: 2,
     role: "Self-directed learning",
     company: "Personal",

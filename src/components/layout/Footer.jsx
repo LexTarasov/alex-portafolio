@@ -35,7 +35,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 py-8 max-w-5xl mx-auto px-6 text-center">
       <div className="flex items-center justify-center gap-6">
         <a
-          href="#"
+          href="https://github.com/LexTarasov"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -44,7 +44,7 @@ export default function Footer() {
           <GithubIcon size={18} />
         </a>
         <a
-          href="#"
+          href="www.linkedin.com/in/alexandra-tarasov-7b06002bb"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -53,7 +53,7 @@ export default function Footer() {
           <LinkedinIcon size={18} />
         </a>
         <a
-          href="mailto:placeholder@email.com"
+          href="alextrasovcr@gmail.com"
           aria-label="Email"
           className="text-gray-400 hover:text-primary-400 transition-colors"
         >

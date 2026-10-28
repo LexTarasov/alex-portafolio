@@ -3,6 +3,7 @@ export const experience = [
     id: 1,
     role: "Full-stack Developer",
     company: "Nexierge",
+    url: "https://nexierge.io/",
     period: "2024 — Present",
     type: "work",
     description: "Built and shipped full product sections end-to-end as part of a startup team. Worked across the entire stack: database architecture, authentication systems, REST API integrations, CRUD operations, and Stripe payment integration. Initially built with Xano + Nordcraft; currently migrating to React + Tailwind.",

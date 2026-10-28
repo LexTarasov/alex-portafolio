@@ -1,6 +1,7 @@
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
 import profileImg from '../../../assets/profile.jpeg'
+import profileHoverImg from '../../../assets/WhatsApp Image 2026-10-28 at 11.57.27 AM.jpeg'
 
 const INTRO = "Hi, I'm Alexandra —"
 const TYPE_SPEED_MS = 60
@@ -56,7 +57,7 @@ export default function Hero() {
         <motion.h1
           {...fadeUp}
           transition={{ duration: 0.5, delay: INTRO_DURATION_S + 0.1 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight whitespace-nowrap mb-8"
+          className="text-3xl md:text-4xl lg:text-5xl font-medium text-white leading-tight md:whitespace-nowrap mb-8"
         >
           Full-stack software developer.
         </motion.h1>
@@ -68,7 +69,19 @@ export default function Hero() {
         >
           <div className="avatar-wrapper">
             <div className="avatar-ring" aria-hidden="true" />
-            <img src={profileImg} alt="Alexandra" className="avatar-img" />
+            <div className="avatar-media">
+              <img
+                src={profileImg}
+                alt="Alexandra"
+                className="avatar-img avatar-img-base"
+              />
+              <img
+                src={profileHoverImg}
+                alt=""
+                aria-hidden="true"
+                className="avatar-img avatar-img-hover"
+              />
+            </div>
           </div>
         </motion.div>
 
@@ -95,7 +108,7 @@ export default function Hero() {
             View my work
           </a>
           <a
-            href="https://github.com/LexTarasov"
+            href="https://github.com/alextrasovcr-15"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 rounded-lg border border-white/15 hover:border-white/30 text-gray-200 font-medium transition-colors"

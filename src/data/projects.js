@@ -1,4 +1,4 @@
-import { LayoutDashboard, Coffee, Boxes } from 'lucide-react'
+import { LayoutDashboard, Coffee, Boxes, Palette } from 'lucide-react'
 
 export const projects = [
   {
@@ -30,6 +30,14 @@ export const projects = [
   githubUrl: "https://github.com/LexTarasov/NodeJS-micro-services",
   liveUrl: null,
   type: "backend",
-}
-  
+  },
+  {
+    id: 4,
+    title: "Art-Its",
+    icon: Palette,
+    description: "One of my first frontend projects and one of the first websites I built while learning React and animations. A visual, motion-driven site where I experimented with layout, transitions, and bringing a design to life in the browser.",
+    tech: ["React", "JavaScript", "CSS", "Animations"],
+    liveUrl: "https://art-its.netlify.app/#home",
+    featured: false,
+  },
 ]
